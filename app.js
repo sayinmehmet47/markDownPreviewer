@@ -55,7 +55,8 @@ And here. | Okay. | I think we get it.
 `;
 
 $(document).ready(function () {
-  $('body').attr('backgroundColor', '#54a0ff');
+  $('body').css('backgroundColor', '#54a0ff');
+
   $('#editor').html(readyText);
   var val = $('#editor').val();
   $('#preview').html(marked(val));
